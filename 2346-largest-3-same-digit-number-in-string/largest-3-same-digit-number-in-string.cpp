@@ -18,7 +18,7 @@ public:
         if(result == INT_MIN){
             return "";
         }
-    string f = (3,to_string(result));
+    string f = to_string(result);
     string res = f + f + f;
     return res;
     }
