@@ -19,9 +19,6 @@ public:
         if (vowel <= 0)
             return false;
 
-       
-        
-        
     return true;
     }
 };
