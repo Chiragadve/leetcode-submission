@@ -1,2 +1,4 @@
 # Write your MySQL query statement below
-select  coalesce(max(num),NULL) as num from (select num from MyNumbers group by num having count(*) <= 1) as t
+select ifnull(max(num),null) as num from (
+    select num from Mynumbers group by num having count(num) = 1
+) t;
