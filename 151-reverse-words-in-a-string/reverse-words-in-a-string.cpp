@@ -2,21 +2,21 @@ class Solution {
 public:
     string reverseWords(string s) {
         string result;
-        stringstream ss(s);
-        string w;
         stack<string> st;
+        stringstream ss(s);
+        string t;
 
-        while(ss >> w) {
-            st.push(w);
+        while(ss >> t){
+            st.push(t);
         }
 
-        while (!st.empty()) {
-            result += st.top();
+        while(!st.empty()){
+            result +=st.top();
             st.pop();
             if(!st.empty()){
-                result += ' ';
+                result+= ' ';
             }
         }
-        return result;
+    return result;
     }
 };
