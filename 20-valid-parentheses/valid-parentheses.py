@@ -1,8 +1,11 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
+        if len(s) < 2:
+            return False
+
         for i in range(len(s)):
-            if s[i] == '(' or s[i] == '[' or s[i] == '{':
+            if s[i] == "(" or s[i] == "[" or s[i] == "{":
                 stack.append(s[i])
             else:
                 if not stack:
@@ -13,5 +16,5 @@ class Solution:
                 if s[i] == ']' and top != '[':
                     return False
                 if s[i] == '}' and top != '{':
-                    return False
+                    return False                
         return len(stack) == 0
