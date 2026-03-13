@@ -22,4 +22,3 @@ class Solution:
         else:
             curr.next = list2
         return dummy.next
-        
