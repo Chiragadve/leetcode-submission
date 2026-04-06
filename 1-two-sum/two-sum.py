@@ -6,4 +6,7 @@ class Solution:
             if key in dict:
                 return [i,dict.get(key)]
             dict[nums[i]] = i
-       
+            
+
+
+        
