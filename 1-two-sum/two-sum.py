@@ -5,7 +5,7 @@ class Solution:
         for i in range(len(nums)):
             compliment = target - nums[i]
             if compliment in map:
-                return [map.get(compliment),i]
+                return [map[compliment],i]
             else:
                 map[nums[i]] = i
 
